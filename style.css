@@ -1,0 +1,26 @@
+:root {
+  /* TEXT COLORS */
+  --text-color-1: #1f2945; /* Primary Text (Dark Gray) */
+  --text-color-2: #343845; /* Secondary / Muted Text (Soft Gray) */
+
+  /* MAIN COLORS */
+  --main-color: #1462d7; /* Main Brand (Medical Blue) */
+  --secondary-color: #22c55e; /* Secondary / Success (Medical Green) */
+
+  /* BACKGROUND COLORS */
+  --background-color: #eaf4ff; /* Main Background (Light Blue) */
+  --cards-background-color: #fffffa; /* Cards (Pure White) */
+
+  /* BUTTON COLORS */
+  --button-background-color: #22c55e; /* Medical Green */
+  --button-hover-color: #16a34a; /* Slightly Darker Green for Hover */
+
+  /* EMERGENCY */
+  --emergency-color: #dc2626; /* Red for Urgent Calls */
+
+  /* FONT FAMILY */
+  --heading-font: "Poppins", sans-serif;
+  --subheading-font: "Poppins", sans-serif;
+  --paragraph-font: "Inter", sans-serif;
+  --body-font: "Inter", sans-serif;
+}
