@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Appointment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container-card-appoinment">
+      <section class="card-appoinment">
+        <div class="container-appoinment">
+          <h2 class="title-appointment">appointment</h2>
+          <p class="text-appoinment">
+            Schedule Your Care with Our<br />
+            Certified Experts
+          </p>
+        </div>
+        <form action="" class="form">
+          <fieldset>
+            <legend>Patient Information</legend>
+            <div class="input-row">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="input-row">
+              <input
+                type="tel"
+                name="telephone"
+                id="telephone"
+                placeholder="Telephone"
+                required
+              />
+
+              <input type="date" name="date" id="date" required />
+            </div>
+            <select name="Gender" id="Gender">
+              <option value="gender">Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </fieldset>
+
+          <select name="Service" id="Service">
+            <option value="service">Service</option>
+            <option value="Cardiology">Cardiology</option>
+            <option value="Neurology">Neurology</option>
+            <option value="Pediatrics">Pediatrics</option>
+            <option value="Orthopedics">Orthopedics</option>
+            <option value="Dermatology">Dermatology</option>
+            <option value="Emergency">Emergency</option></select
+          ><br />
+          <select name="Doctors" id="Doctors">
+            <option value="Select-doctors">Select Doctors (Optional)</option>
+            <option value="">Drs. Sahra Abdullahi Warsame</option>
+            <option value="">Dr. Mohamed Ahmed Abdi</option>
+            <option value="">Drs. Maria Elena Rossi</option>
+            <option value="">Dr. James William Brown</option>
+            <option value="">Dr. Ahmed Khalid Hassan</option>
+            <option value="">Dr. Daniel Michael Carter</option>
+            <option value="">Drs. Hodan Mohamed Noor</option>
+            <option value="">Dr. Ayaan Hassan Ali</option>
+            <option value="">Dr. Abdirahman Omar Yusuf</option>
+            <option value="">Dr. Mohamed Ahmed Abdi</option>
+            <option value="">Drs.Emily Sophia Anderson</option>
+          </select>
+          <br />
+          <textarea
+            name="Message"
+            id="message"
+            placeholder="Enter Your Message"
+          ></textarea
+          ><br />
+          <button type="submit" class="btn-appoimment">Make appoinmnt</button>
+        </form>
+      </section>
+      <section class="card-appoinment">
+        <h1 class="card-app-title">Work Hours</h1>
+
+        <table>
+          <tr>
+            <thead>
+              <th class="day-title">Days-shift</th>
+              <th class="time-title-shift">Time-shift</th>
+              <th class="nigth-title">Night-shift</th>
+              <th class="time-ttle-nigth">Time-Night</th>
+            </thead>
+          </tr>
+
+          <tbody>
+            <tr>
+              <td class="info">Saturday</td>
+              <td class="time-info">8:00am-17:00</td>
+              <td class="night-info">Saturday</td>
+                <td class="nigth-time-info">17:30-21:00</td>
+             
+            </tr>
+            <tr>
+              <td class="info">Sunday</td>
+             <td class="time-info">8:00am-17:00</td>
+              <td class="night-info">Sunday</td>
+             <td class="nigth-time-info">closed</td>
+            </tr>
+            <tr>
+              <td class="info">Monday</td>
+              <td class="time-info">8:00am-17:00</td>
+              <td class="night-info">Monday</td>
+               <td class="nigth-time-info">17:30-23:00</td>
+            </tr>
+            <tr>
+              <td class="info">Tuesday</td>
+              <td class="time-info">8:00am-17:00</td>
+              <td class="night-info">Tuesday</td>
+               <td class="nigth-time-info">17:30-22:00</td>
+            </tr>
+            <tr>
+              <td class="info">wendesday</td>
+              <td class="time-info">8:00am-17:00</td>
+              <td class="night-info">wendesday</td>
+              <td class="nigth-time-info">17:30-23:00</td>
+            </tr>
+            <tr>
+              <td class="info">Thursday</td>
+              <td class="time-info">8:00am-17:00</td>
+              <td class="night-info">Thursday</td>
+              <td class="nigth-time-info">17:30-22:00</td>
+            </tr>
+            <tr>
+              <td class="info">Friday</td>
+              <td class="time-info">Emergency Department Open</td>
+              <td class="tr-firf">Friday</td>
+              <td class="time-info">Emergency Department Open</td>
+            </tr>
+          </tbody>
+          
+          <tfoot>
+            <tr class="emergency-tr">
+              <td colspan="4">24/7 Emergency Care Open</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

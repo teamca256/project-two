@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Doctor Appointment</title>
+
+    <style>
+      :root {
+        /* TEXT COLORS */
+        --text-color-1: #1f2945;
+        --text-color-2: #343845;
+
+        /* MAIN COLORS */
+        --main-color: #1462d7;
+        --secondary-color: #22c55e;
+
+        /* BACKGROUND COLORS */
+        --background-color: #eaf4ff;
+        --cards-background-color: #fffffa;
+
+        /* BUTTON COLORS */
+        --button-background-color: #22c55e;
+        --button-hover-color: #16a34a;
+
+        /* EMERGENCY */
+        --emergency-color: #dc2626;
+
+        /* FONT FAMILY */
+        --heading-font: "Poppins", sans-serif;
+        --paragraph-font: "Inter", sans-serif;
+      }
+
+      /* RESET */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      /* BODY */
+      body {
+        background-color: var(--background-color);
+        font-family: var(--paragraph-font);
+      }
+
+      /* FORM */
+      .doctors-form {
+        width: 80%;
+        max-width: 600px;
+        padding: 30px;
+        margin: 30px auto;
+
+        background-color: var(--text-color-1);
+        border-radius: 15px;
+      }
+
+      /* PATIENT INFORMATION */
+      .patient-form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      /* LABEL */
+      label {
+        color: var(--cards-background-color);
+        font-weight: 600;
+      }
+
+      /* INPUT AND TEXTAREA */
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+
+        margin-bottom: 15px;
+
+        border: 2px solid var(--cards-background-color);
+        border-radius: 8px;
+
+        outline: none;
+
+        background-color: var(--cards-background-color);
+        color: var(--text-color-2);
+
+        font-family: var(--paragraph-font);
+        font-size: 15px;
+      }
+
+      /* INPUT FOCUS */
+      input:focus,
+      textarea:focus {
+        border-color: var(--secondary-color);
+      }
+
+      /* GENDER */
+      .radio {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        gap: 20px;
+
+        margin: 10px 0 20px;
+      }
+
+      .gender-title {
+        color: var(--cards-background-color);
+        font-weight: bold;
+      }
+
+      .radio-option {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      /* RADIO INPUT */
+      .radio-option input {
+        width: auto;
+        margin: 0;
+      }
+
+      /* DATE */
+      .date-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      /* MESSAGE */
+      #message {
+        width: 100%;
+        height: 150px;
+
+        padding: 15px;
+
+        resize: vertical;
+      }
+
+      /* BUTTON */
+      .btn-appointment {
+        width: 100%;
+
+        padding: 15px;
+
+        background-color: var(--button-background-color);
+        color: var(--cards-background-color);
+
+        border: none;
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        font-size: 18px;
+        font-weight: bold;
+
+        transition: 0.3s;
+      }
+
+      /* BUTTON HOVER */
+      .btn-appointment:hover {
+        background-color: var(--button-hover-color);
+      }
+
+      /* MOBILE */
+      @media (max-width: 600px) {
+        .doctors-form {
+          width: 95%;
+          padding: 20px;
+        }
+
+        .radio {
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Appointment Form -->
+    <section>
+      <form action="" class="doctors-form">
+
+        <!-- Patient Information -->
+        <div class="patient-form">
+
+          <label for="full-name">Full Name</label>
+
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            autocomplete="name"
+            required
+          />
+
+          <label for="phone-number">Phone Number</label>
+
+          <input
+            type="tel"
+            id="phone-number"
+            name="phone-number"
+            autocomplete="tel"
+            required
+          />
+
+          <label for="email">Email</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          />
+
+        </div>
+
+        <!-- Gender -->
+        <div class="radio">
+
+          <span class="gender-title">
+            Gender:
+          </span>
+
+          <div class="radio-option">
+
+            <input
+              type="radio"
+              name="gender"
+              id="male"
+              value="Male"
+              required
+            />
+
+            <label for="male">
+              Male
+            </label>
+
+          </div>
+
+          <div class="radio-option">
+
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="Female"
+            />
+
+            <label for="female">
+              Female
+            </label>
+
+          </div>
+
+        </div>
+
+        <!-- Appointment Date -->
+        <div class="date-container">
+
+          <label for="date">
+            Appointment Date
+          </label>
+
+          <input
+            type="datetime-local"
+            name="date"
+            id="date"
+            required
+          />
+
+        </div>
+
+        <!-- Message -->
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Write your message..."
+        ></textarea>
+
+        <!-- Submit -->
+        <button
+          type="submit"
+          class="btn-appointment"
+        >
+          Make Appointment
+        </button>
+
+      </form>
+    </section>
+  </body>
+</html>`
