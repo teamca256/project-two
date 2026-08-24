@@ -1,29 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-     <!-- FontAwesome CDN (Hubi in uu ku jiro <head> dhexdiisa si icons-ku u shaqeeyaan) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</head>
-<body>
+    <title>SomCare Hospital</title>
 
-     <header>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header>
       <div class="Logo">
-        <img src="logo.jpeg" alt="SomCare Hospital Logo" />
+        <img src="download.png" alt="SomCare Hospital Logo" />
         <span>SomCare Hospital</span>
       </div>
 
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About us</a></li>
           <li><a href="./doctors.html">Doctors</a></li>
           <li><a href="#units">Medical units</a></li>
@@ -32,287 +43,475 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ================= HERO SECTION ================= -->
     <section id="home">
       <div class="hero-content">
-        <!-- Qoraalka Bidixda -->
+        <!-- Left Text -->
         <div class="left-text">
-          <h1>Your Health, <br>Our Priority</h1>
+          <h1>
+            Your Health,
+            <br />
+            Our Priority
+          </h1>
+
           <p>
-            We provide you world-class medical services with a patient-centered approach.
+            We provide you world-class medical services with a patient-centered
+            approach.
           </p>
-          
-          <!-- Links-ka cusub ee Find Doctor & Book Appointment -->
+
           <div class="hero-buttons">
-            <a href="doctors.html" class="btn-primary">Find Doctor</a> <br>
-            <a href="./appoiment.html" class="btn-secondary">Book Appointment</a>
+            <a href="doctors.html" class="btn-primary"> Find Doctor </a>
+
+            <br />
+
+            <a href="./appoiment.html" class="btn-secondary">
+              Book Appointment
+            </a>
           </div>
         </div>
 
-        
+        <!-- Right Image -->
         <div class="right-image">
-          <img src="https://i.pinimg.com/736x/25/67/1d/25671d8e1e97f69655f0205c16354966.jpg" alt="Doctor Image" />
+          <img
+            src="https://i.pinimg.com/736x/25/67/1d/25671d8e1e97f69655f0205c16354966.jpg"
+            alt="Doctor Image"
+          />
         </div>
       </div>
 
-      <!-- Quick Info Cards (Gudaha Hoose / Bottom) -->
+      <!-- Quick Info Cards -->
       <div class="container">
+        <!-- Ambulance -->
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1587745416684-47953f16f02f?q=80&w=200&auto=format&fit=crop" alt="Ambulance" />
+          <img
+            src="https://images.unsplash.com/photo-1587745416684-47953f16f02f?q=80&w=200&auto=format&fit=crop"
+            alt="Ambulance"
+          />
+
           <h3>Ambulance</h3>
-          <p>Call: <span>247</span></p>
+
+          <p>
+            Call:
+            <span>24/7</span>
+          </p>
         </div>
 
+        <!-- Find Doctor -->
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=200&auto=format&fit=crop" alt="Find Doctor" />
+          <img
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=200&auto=format&fit=crop"
+            alt="Find Doctor"
+          />
+
           <h3>Find Doctor</h3>
+
           <p>Qualified Specialists</p>
         </div>
 
+        <!-- Book Appointment -->
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=200&auto=format&fit=crop" alt="Book Appointment" />
+          <img
+            src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=200&auto=format&fit=crop"
+            alt="Book Appointment"
+          />
+
           <h3>Book Appointment</h3>
+
           <p>Easy Online Booking</p>
         </div>
 
+        <!-- Beds -->
         <div class="card">
-          <img src="https://i.pinimg.com/736x/bd/e1/f6/bde1f68a481acb7441b7485ab6bf9fb8.jpg" alt="200+ Beds" />
+          <img
+            src="https://i.pinimg.com/736x/bd/e1/f6/bde1f68a481acb7441b7485ab6bf9fb8.jpg"
+            alt="200+ Beds"
+          />
+
           <h3>200+ Beds</h3>
+
           <p>Comfortable & Modern Rooms</p>
         </div>
       </div>
     </section>
-  <!-- WHY CHOOSE US SECTION -->
-<section class="why-choose-us">
-    <div class="container-why-u-choose-us">
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="why-choose-us">
+      <div class="container-why-u-choose-us">
         <h2>Why Choose SomCare Hospital?</h2>
-        <p class="subtitle">We provide world-class medical services with a patient-centered approach.</p>
-        <img src="https://i.pinimg.com/1200x/e3/bf/a4/e3bfa43b8709a3a2ae9f054414d3fd85.jpg" alt="" class="img-why-choose-us">
-        
+
+        <p class="subtitle">
+          We provide world-class medical services with a patient-centered
+          approach.
+        </p>
+
+        <img
+          src="https://i.pinimg.com/1200x/e3/bf/a4/e3bfa43b8709a3a2ae9f054414d3fd85.jpg"
+          alt=""
+          class="img-why-choose-us"
+        />
+
         <div class="features-grid-why-u-choose-us">
-            <div class="feature-card-why-u-choose-us">
-                <div class="icon-why-u-choose-us">👨‍⚕️</div>
-                <h3>Experienced Doctors</h3>
-                <p>Highly qualified and experienced medical professionals dedicated to your health.</p>
-            </div>
-            
-            <div class="feature-card-why-u-choose-us">
-                <div class="icon-why-u-choose-us">🔬</div>
-                <h3>Modern Medical Equipment</h3>
-                <p>State-of-the-art technology for accurate diagnoses and effective treatments.</p>
-            </div>
-            
-            <div class="feature-card-why-u-choose-us">
-                <div class="icon-why-u-choose-us">🚑</div>
-                <h3>24/7 Emergency Service</h3>
-                <p>Fully equipped emergency care available around the clock.</p>
-            </div>
-            
-            <div class="feature-card-why-u-choose-us">
-                <div class="icon-why-u-choose-us">❤️</div>
-                <h3>Patient-Centered Care</h3>
-                <p>Your health, safety, and comfort are our highest priorities.</p>
-            </div>
+          <!-- Feature 1 -->
+          <div class="feature-card-why-u-choose-us">
+            <div class="icon-why-u-choose-us">👨‍⚕️</div>
+
+            <h3>Experienced Doctors</h3>
+
+            <p>
+              Highly qualified and experienced medical professionals dedicated
+              to your health.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card-why-u-choose-us">
+            <div class="icon-why-u-choose-us">🔬</div>
+
+            <h3>Modern Medical Equipment</h3>
+
+            <p>
+              State-of-the-art technology for accurate diagnoses and effective
+              treatments.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card-why-u-choose-us">
+            <div class="icon-why-u-choose-us">🚑</div>
+
+            <h3>24/7 Emergency Service</h3>
+
+            <p>Fully equipped emergency care available around the clock.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card-why-u-choose-us">
+            <div class="icon-why-u-choose-us">❤️</div>
+
+            <h3>Patient-Centered Care</h3>
+
+            <p>Your health, safety, and comfort are our highest priorities.</p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section>
-    <div class="our-service-container">
-        <h1> Our services</h1>
-           <div class="header-line"></div>
-        <div class="features-grid-our-service">
-            <div class="feature-card-our-service">
-                <div class="icon-our-services">🚨</div>
-                <h3>Emergency Care</h3>
-                <p> 24/7 emergency services for critical situations.</p>
-            </div>
+    <!-- ================= OUR SERVICES ================= -->
+    <section>
+      <div class="our-service-container">
+        <h1>Our Services</h1>
 
-            
-            <div class="feature-card-our-service">
-                <div class="icon-our-services">🔬</div>
-                <h3>Laboratory Services</h3>
-                <p>Accurate test results for better diagnosis.</p>
-            </div>
-
-            
-            <div class="feature-card-our-service">
-                <div class="icon-our-services">💊</div>
-                <h3>Pharmacy Services </h3>
-                <p> Quality medicines available at your service.</p>
-            </div>
-      
-    </div>
-      <a href="#view" class="view">View All Services &rarr;</a>
-</section>
-
-<section class="our-doctors-container">
-    <div class="doctors-header">
-        <h2>Our Doctors</h2>
         <div class="header-line"></div>
-    </div>
 
-    <div class="doctors-grid">
+        <div class="features-grid-our-service">
+          <!-- Emergency -->
+          <div class="feature-card-our-service">
+            <div class="icon-our-services">🚨</div>
+
+            <h3>Emergency Care</h3>
+
+            <p>24/7 emergency services for critical situations.</p>
+          </div>
+
+          <!-- Laboratory -->
+          <div class="feature-card-our-service">
+            <div class="icon-our-services">🔬</div>
+
+            <h3>Laboratory Services</h3>
+
+            <p>Accurate test results for better diagnosis.</p>
+          </div>
+
+          <!-- Pharmacy -->
+          <div class="feature-card-our-service">
+            <div class="icon-our-services">💊</div>
+
+            <h3>Pharmacy Services</h3>
+
+            <p>Quality medicines available at your service.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#view" class="view"> View All Services &rarr; </a>
+    </section>
+
+    <!-- ================= OUR DOCTORS ================= -->
+    <section class="our-doctors-container">
+      <div class="doctors-header">
+        <h2>Our Doctors</h2>
+
+        <div class="header-line"></div>
+      </div>
+
+      <div class="doctors-grid">
         <!-- Doctor 1 -->
         <div class="doctor-card">
-            <img src="https://i.pinimg.com/736x/f1/63/8a/f1638a3b734fa2c73a05cc1893f5796e.jpg" alt="Dr. Abdi Hassan" class="doctor-img">
-            <div class="doctor-info">
-                <h4>Dr. Abdi Hassan</h4>
-                <p>Cardiologist</p>
-                <a href="#" class="view-profile-btn">View Profile</a>
-            </div>
+          <img
+            src="https://i.pinimg.com/736x/07/17/8c/07178ce99848a10d14a90127ec068435.jpg"
+            alt=""
+            class="doctor-img"
+          />
+
+          <div class="doctor-info">
+            <h4>Dr. Abdirahman Omar Yusuf</h4>
+
+            <p>Cardiologist</p>
+
+            <a href="abdirahman Cardiologist.html" class="view-profile-btn">
+              View Profile
+            </a>
+          </div>
         </div>
 
         <!-- Doctor 2 -->
         <div class="doctor-card">
-            <img src="https://i.pinimg.com/1200x/d6/19/d6/d619d6c3c9328ea79f094e1922495dc4.jpg" alt="Dr. Aisha Ali" class="doctor-img">
-            <div class="doctor-info">
-                <h4>Dr. Aisha Mohamed</h4>
-                <p>Pediatrician</p>
-                <a href="#" class="view-profile-btn">View Profile</a>
-            </div>
+          <img
+            src="https://i.pinimg.com/1200x/60/44/dc/6044dc1f695f16851ac3241295f97bb0.jpg"
+            alt=""
+            class="doctor-img"
+          />
+
+          <div class="doctor-info">
+            <h4>Drs.Ayan Hassan Ali</h4>
+
+            <p>Pediatrician</p>
+
+            <a href="ayan Pediatrician.html" class="view-profile-btn">
+              View Profile
+            </a>
+          </div>
         </div>
 
         <!-- Doctor 3 -->
         <div class="doctor-card">
-            <img src="https://i.pinimg.com/736x/84/0c/b3/840cb3b35f9322287844ea99a96fe217.jpg" alt="Dr. Mohamed Omar" class="doctor-img">
-            <div class="doctor-info">
-                <h4>Dr. Mohamed Omar</h4>
-                <p>Surgeon</p>
-                <a href="#" class="view-profile-btn">View Profile</a>
-            </div>
+          <img
+            src="https://i.pinimg.com/736x/c9/9e/4d/c99e4dbd3b3dcc7d0a90e22edb54fca6.jpg"
+            alt="Dr. Mohamed Ahmed Abdi"
+            class="doctor-img"
+          />
+
+          <div class="doctor-info">
+            <h4>Dr.Mohamed Ahmed Abdi</h4>
+
+            <p>Neurologist</p>
+
+            <a href="mohamedneorology.html" class="view-profile-btn">
+              View Profile
+            </a>
+          </div>
         </div>
 
         <!-- Doctor 4 -->
         <div class="doctor-card">
-            <img src="https://i.pinimg.com/1200x/94/1d/83/941d832cb052d79777257f6f7f5e02db.jpg" alt="Dr. Fadumo Ahmed" class="doctor-img">
-            <div class="doctor-info">
-                <h4>Dr. Fadumo Ahmed</h4>
-                <p>Gynecologist</p>
-                <a href="#" class="view-profile-btn">View Profile</a>
-            </div>
+          <img
+            src="https://i.pinimg.com/736x/d8/96/aa/d896aaa98d195a027b738d20d8e04f83.jpg"
+            alt="Dr.Sahra Abdullahi Warsame"
+            class="doctor-img"
+          />
+
+          <div class="doctor-info">
+            <h4>Drs.Sahra Abdullahi Warsame</h4>
+
+            <p>Gynecologist & Obstetrician</p>
+
+            <a href="sahra Gynecologist.html" class="view-profile-btn">
+              View Profile
+            </a>
+          </div>
         </div>
-         <a href="./doctors.html" class="view">View All Doctor &rarr;</a>
-    </div>
 
-</section>
+        <!-- All Doctors -->
+        <a href="./doctors.html" class="view"> View All Doctors &rarr; </a>
+      </div>
+    </section>
 
-
-<section class="medical-units-container">
-    <div class="units-header">
+    <!-- ================= MEDICAL UNITS ================= -->
+    <section class="medical-units-container">
+      <div class="units-header">
         <h2>Our Medical Units</h2>
+
         <div class="header-line"></div>
-    </div>
+      </div>
 
-    <div class="units-grid">
-        <!-- Unit 1 -->
+      <div class="units-grid">
+        <!-- Cardiology -->
         <div class="unit-card">
-            <div class="unit-title-box">
-                <span class="unit-icon">💙</span>
-                <h3>Cardiology</h3>
-            </div>
-            <img src="https://i.pinimg.com/1200x/0e/c7/d7/0ec7d7909888d9b147bd09a167f8feac.jpg" alt="Cardiology" class="unit-img">
+          <div class="unit-title-box">
+            <span class="unit-icon"> 💙 </span>
+
+            <h3>Cardiology</h3>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/1200x/0e/c7/d7/0ec7d7909888d9b147bd09a167f8feac.jpg"
+            alt="Cardiology"
+            class="unit-img"
+          />
         </div>
 
-        <!-- Unit 2 -->
+        <!-- Pediatrics -->
         <div class="unit-card">
-            <div class="unit-title-box">
-                <span class="unit-icon">👶</span>
-                <h3>Pediatrics</h3>
-            </div>
-            <img src="https://i.pinimg.com/736x/74/26/b6/7426b6a489c047fa93a86139b9608341.jpg" alt="Pediatrics" class="unit-img">
+          <div class="unit-title-box">
+            <span class="unit-icon"> 👶 </span>
+
+            <h3>Pediatrics</h3>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/74/26/b6/7426b6a489c047fa93a86139b9608341.jpg"
+            alt="Pediatrics"
+            class="unit-img"
+          />
         </div>
 
-        <!-- Unit 3 -->
+        <!-- Surgery -->
         <div class="unit-card">
-            <div class="unit-title-box">
-                <span class="unit-icon">🔪</span>
-                <h3>Surgery</h3>
-            </div>
-            <img src="https://i.pinimg.com/736x/d5/5e/84/d55e84801da45b86853616b144ed0fab.jpg" alt="Surgery" class="unit-img">
+          <div class="unit-title-box">
+            <span class="unit-icon"> 🔪 </span>
+
+            <h3>Surgery</h3>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/736x/d5/5e/84/d55e84801da45b86853616b144ed0fab.jpg"
+            alt="Surgery"
+            class="unit-img"
+          />
         </div>
 
-        <!-- Unit 4 -->
+        <!-- Internal Medicine -->
         <div class="unit-card">
-            <div class="unit-title-box">
-                <span class="unit-icon">🩺</span>
-                <h3>Internal Medicine</h3>
-            </div>
-            <img src="https://i.pinimg.com/1200x/cd/b3/46/cdb3462d504a93ec4c60fe3b457abb89.jpg" alt="Internal Medicine" class="unit-img">
+          <div class="unit-title-box">
+            <span class="unit-icon"> 🩺 </span>
+
+            <h3>Internal Medicine</h3>
+          </div>
+
+          <img
+            src="https://i.pinimg.com/1200x/cd/b3/46/cdb3462d504a93ec4c60fe3b457abb89.jpg"
+            alt="Internal Medicine"
+            class="unit-img"
+          />
         </div>
-    </div>
+      </div>
 
-    <!-- View All Button -->
-    <a href="#" class="view-all-units-btn">View All Departments &rarr;</a>
-</section>
+      <!-- View All Departments -->
+      <a href="#" class="view-all-units-btn"> View All Departments &rarr; </a>
+    </section>
 
-
-
-<footer class="footer">
-    <div class="footer-container">
-
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-container">
         <!-- Logo & About Hospital -->
         <div class="footer-section hospital-about">
-            <img src="logo.jpeg" alt="Somcare Hospital Logo" class="footer-logo">
-            <p>
-                Providing quality healthcare services with experienced
-                doctors and modern medical facilities.
-            </p>
-        </div>
+          <img
+            src="logo.jpeg"
+            alt="SomCare Hospital Logo"
+            class="footer-logo"
+          />
 
-      
+          <p>
+            Providing quality healthcare services with experienced doctors and
+            modern medical facilities.
+          </p>
+        </div>
 
         <!-- Our Services -->
         <div class="footer-section">
-            <h3>Our Services</h3>
-            <ul>
-                <li>Emergency Care</li>
-                <li>Laboratory</li>
-                <li>Pharmacy</li>
-                <li>Surgery</li>
-            </ul>
+          <h3>Our Services</h3>
+
+          <ul>
+            <li>Emergency Care</li>
+
+            <li>Laboratory</li>
+
+            <li>Pharmacy</li>
+
+            <li>Surgery</li>
+          </ul>
         </div>
 
-          <!-- Quick Links -->
+        <!-- Quick Links -->
         <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Doctors</a></li>
-                <li><a href="#">Medical Units</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="#"> About Us </a>
+            </li>
+
+            <li>
+              <a href="#"> Doctors </a>
+            </li>
+
+            <li>
+              <a href="#"> Medical Units </a>
+            </li>
+
+            <li>
+              <a href="#"> Contact </a>
+            </li>
+          </ul>
         </div>
 
         <!-- Contact Us -->
         <div class="footer-section contact-info">
-            <h3>Contact Us</h3>
-            <p>📍 Location: Mogadishu, Somalia</p>
-            <p class="emergency">📞 Emergency: 24/7</p>
-            <p>📧 Email: info@somcarehospital.com</p>
-            <p>🕐 Open 24/7</p>
+          <h3>Contact Us</h3>
+
+          <p>📍 Location: Mogadishu, Somalia</p>
+
+          <p class="emergency">📞 Emergency: 24/7</p>
+
+          <p>📧 Email: info@somcarehospital.com</p>
+
+          <p>🕐 Open 24/7</p>
         </div>
 
         <!-- Social Media -->
         <div class="footer-section">
-            <h3>Follow Us</h3>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook-f"></i> Somcare Hospital</a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i> Somcare Hospital</a></li>
-                <li><a href="#"><i class="fab fa-whatsapp"></i> 0618097854</a></li>
-                <li><a href="#"><i class="fab fa-tiktok"></i> Somcare Hospital</a></li>
-            </ul>
+          <h3>Follow Us</h3>
+
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+                SomCare Hospital
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+                SomCare Hospital
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-whatsapp"></i>
+                0618097854
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-tiktok"></i>
+                SomCare Hospital
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-    </div>
-
-    <!-- Bottom Footer -->
-    <div class="footer-bottom">
-        <p>© 2026 Somcare Hospital 🏥. All Rights Reserved.</p>
-    </div>
-</footer>
-</html>
- 
-</body>
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <p>© 2026 SomCare Hospital 🏥. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>

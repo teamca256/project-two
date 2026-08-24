@@ -1,16 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
+    <title>SomCare Hospital | Doctors</title>
 
-<body>
-     <header>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
       <div class="Logo">
         <img src="logo.jpeg" alt="SomCare Hospital Logo" />
         <span>SomCare Hospital</span>
@@ -19,332 +25,321 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#about">About us</a></li>
-          <li><a href="./doctors.html">Doctors</a></li>
-          <li><a href="#units">Medical units</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="index.html#about">About us</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="index.html#units">Medical units</a></li>
+          <li><a href="index.html#contacts">Contacts</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-        <section class="doctors-section">
+      <section class="doctors-section">
+        <div class="doct-grid">
+          <!-- Doctor 1 -->
+          <div class="card-doctor">
+            <div class="card-top">
+              <img
+                class="doct-image"
+                src="https://i.pinimg.com/1200x/a5/28/5a/a5285ad35d936620931425293f4a0922.jpg"
+                alt="Dr. Daniel Michael Carter"
+              />
 
-            <div class="doct-grid">
+              <div class="doctor-info">
+                <div class="doct-name">Dr. Daniel Michael Carter</div>
 
-                <!-- Doctor 1 -->
-                <div class="card">
-
-                    <div class="card-top">
-
-                        <img class="doct-image" src="https://i.pinimg.com/1200x/a5/28/5a/a5285ad35d936620931425293f4a0922.jpg" 
-                        alt="Dr. Daniel Michael Carter">
-
-                        <div class="doctor-info">
-
-                            <div class="doct-name">
-                               Dr. Daniel Michael Carter
-                            </div>
-
-                            <div class="doct-dept">
-                                Orthopedic Surgery
-                            </div>
-                        </div>
-                    </div>
-                    <a href="daniel.html" class="doct-link">
-                        View More
-                    </a>
-
-                </div>
-                <!-- Doctor 2 -->
-                <div class="card">
-
-                    <div class="card-top">
-
-                        <img class="doct-image" src="https://i.pinimg.com/736x/97/7e/c2/977ec2f978dfb2e58e209f120caa3ebf.jpg" 
-                        alt="Dr. Ahmed Khalid Hassan">
-
-                        <div class="doctor-info">
-
-                            <div class="doct-name">
-                               Dr. Ahmed Khalid Hassan
-                            </div>
-
-                            <div class="doct-dept">
-                               General Surgery
-                            </div>
-                        </div>
-                    </div>
-                    <a href="ahmed-khalid.html" class="doct-link">
-                        View More
-                    </a>
-
-                </div>
-                                <!-- Doctor 3 -->
-                <div class="card">
-
-                    <div class="card-top">
-
-                        <img class="doct-image" src="https://i.pinimg.com/1200x/eb/31/75/eb31750dbf64dd06d425d11774794a26.jpg" 
-                        alt="Dr. James William Brown">
-
-                        <div class="doctor-info">
-
-                            <div class="doct-name">
-                                Dr. James William Brown
-                            </div>
-
-                            <div class="doct-dept">
-                                 Internal Medicine
-                            </div>
-                        </div>
-                    </div>
-                    <a href="james.html" class="doct-link">
-                        View More
-                    </a>
-
-                </div>
-                                <!-- Doctor 4 -->
-                <div class="card">
-
-                    <div class="card-top">
-
-                        <img class="doct-image" src="https://i.pinimg.com/1200x/c6/0a/5f/c60a5f216b00f65c0fd5ccaef55eb0ed.jpg" 
-                        alt="Dr. Maria Elena Rossi">
-
-                        <div class="doctor-info">
-
-                            <div class="doct-name">
-                               Dr. Maria Elena Rossi
-                            </div>
-
-                            <div class="doct-dept">
-                                Ophthalmology
-                            </div>
-                        </div>
-                    </div>
-                    <a href="maria.html" class="doct-link">
-                        View More
-                    </a>
-
-                </div>
-                                <!-- Doctor 5 -->
-                <div class="card">
-
-                    <div class="card-top">
-
-                        <img class="doct-image" src="https://i.pinimg.com/736x/d8/96/aa/d896aaa98d195a027b738d20d8e04f83.jpg" 
-                        alt="Dr. Sahra Abdullahi Warsame">
-
-                        <div class="doctor-info">
-
-                            <div class="doct-name">
-                            Dr. Sahra Abdullahi Warsame
-                            </div>
-
-                            <div class="doct-dept">
-                                Obstetrics & Gynecology
-                            </div>
-                        </div>
-                    </div>
-                    <a href="sahra.html" class="doct-link">
-                        View More
-                    </a>
-
-                </div>
-                                <!-- Doctor 6 -->
-                <div class="card">
-
-                    <div class="card-top">
-
-                        <img class="doct-image" src="https://i.pinimg.com/736x/b0/2d/ff/b02dfff325b03c271ecc45e5d12bd8a0.jpg" 
-                        alt="Dr. Hodan Mohamed Noor">
-
-                        <div class="doctor-info">
-
-                            <div class="doct-name">
-                                Dr. Hodan Mohamed Noor
-                            </div>
-
-                            <div class="doct-dept">
-                                  Dermatology
-                            </div>
-                        </div>
-                    </div>
-                    <a href="hodan.html" class="doct-link">
-                        View More
-                    </a>
-
-                </div>
-                                <!-- Doctor 7 -->
-                <div class="card">
-
-                    <div class="card-top">
-
-                        <img class="doct-image" src="https://i.pinimg.com/1200x/60/44/dc/6044dc1f695f16851ac3241295f97bb0.jpg" 
-                        alt="Dr. Ayaan Hassan Ali">
-
-                        <div class="doctor-info">
-
-                            <div class="doct-name">
-                               Dr. Ayaan Hassan Ali
-                            </div>
-
-                            <div class="doct-dept">
-                                Pediatrics
-                            </div>
-                        </div>
-                    </div>
-                    <a href="ayan.html" class="doct-link">
-                        View More
-                    </a>
-
-                </div>
-                                <!-- Doctor 8 -->
-                <div class="card">
-
-                    <div class="card-top">
-
-                        <img class="doct-image" src="https://i.pinimg.com/736x/07/17/8c/07178ce99848a10d14a90127ec068435.jpg" 
-                        alt="Dr. Abdirahman Omar Yusuf">
-
-                        <div class="doctor-info">
-
-                            <div class="doct-name">
-                             Dr. Abdirahman Omar Yusuf
-                            </div>
-
-                            <div class="doct-dept">
-                                Cardiology 
-                            </div>
-                        </div>
-                    </div>
-                    <a href="abdirahman.html" class="doct-link">
-                        View More
-                    </a>
-
-                </div>
-                                <!-- Doctor 9 -->
-                <div class="card">
-
-                    <div class="card-top">
-
-                        <img class="doct-image" src="https://i.pinimg.com/736x/c9/9e/4d/c99e4dbd3b3dcc7d0a90e22edb54fca6.jpg" 
-                        alt="Dr. Sahra Abdullahi Warsame">
-
-                        <div class="doctor-info">
-
-                            <div class="doct-name">
-                             Dr. Mohamed Ahmed Abdi
-                            </div>
-
-                            <div class="doct-dept">
-                                neorology    
-                            </div>
-                        </div>
-                    </div>
-                    <a href="mohamed.html" class="doct-link">
-                        View More
-                    </a>
-
-                </div>
-                                <!-- Doctor 10 -->
-                <div class="card">
-
-                    <div class="card-top">
-
-                        <img class="doct-image" src="https://i.pinimg.com/1200x/32/1e/13/321e13b9abf47c5249086557894a2d4d.jpg" 
-                        alt="Dr. Emily Sophia Anderson">
-
-                        <div class="doctor-info">
-
-                            <div class="doct-name">
-                              Dr. Emily Sophia Anderson
-                            </div>
-
-                            <div class="doct-dept">
-                                 Psychiatry 
-                            </div>
-                        </div>
-                    </div>
-                    <a href="emily.html" class="doct-link">
-                        View More
-                    </a>
-
-                </div>
-
+                <div class="doct-dept">Orthopedic Surgery</div>
+              </div>
             </div>
 
+            <a href="/project-two/doctors/daniel.html" class="doct-link"> View More </a>
+          </div>
 
+          <!-- Doctor 2 -->
+          <div class="card-doctor">
+            <div class="card-top">
+              <img
+                class="doct-image"
+                src="https://i.pinimg.com/736x/97/7e/c2/977ec2f978dfb2e58e209f120caa3ebf.jpg"
+                alt="Dr. Ahmed Khalid Hassan"
+              />
 
-  
+              <div class="doctor-info">
+                <div class="doct-name">Dr. Ahmed Khalid Hassan</div>
 
-        </section>
+                <div class="doct-dept">General Surgery</div>
+              </div>
+            </div>
+
+            <a href="/project-two/doctors-about us/ahmed-khalid.html" class="doct-link"> View More </a>
+          </div>
+
+          <!-- Doctor 3 -->
+          <div class="card-doctor">
+            <div class="card-top">
+              <img
+                class="doct-image"
+                src="https://i.pinimg.com/1200x/eb/31/75/eb31750dbf64dd06d425d11774794a26.jpg"
+                alt="Dr. James William Brown"
+              />
+
+              <div class="doctor-info">
+                <div class="doct-name">Dr. James William Brown</div>
+
+                <div class="doct-dept">Internal Medicine</div>
+              </div>
+            </div>
+
+            <a href="/project-two/doctors-about us/james.html" class="doct-link"> View More </a>
+          </div>
+
+          <!-- Doctor 4 -->
+          <div class="card-doctor">
+            <div class="card-top">
+              <img
+                class="doct-image"
+                src="https://i.pinimg.com/1200x/c6/0a/5f/c60a5f216b00f65c0fd5ccaef55eb0ed.jpg"
+                alt="Dr. Maria Elena Rossi"
+              />
+
+              <div class="doctor-info">
+                <div class="doct-name">Drs. Maria Elena Rossi</div>
+
+                <div class="doct-dept">Ophthalmology</div>
+              </div>
+            </div>
+
+            <a href="/project-two/doctors-about us/maria.html" class="doct-link"> View More </a>
+          </div>
+
+          <!-- Doctor 5 -->
+          <div class="card-doctor">
+            <div class="card-top">
+              <img
+                class="doct-image"
+                src="https://i.pinimg.com/736x/d8/96/aa/d896aaa98d195a027b738d20d8e04f83.jpg"
+                alt="Dr. Sahra Abdullahi Warsame"
+              />
+
+              <div class="doctor-info">
+                <div class="doct-name">Drs. Sahra Abdullahi Warsame</div>
+
+                <div class="doct-dept">Obstetrics &amp; Gynecology</div>
+              </div>
+            </div>
+
+            <a href="/project-two/doctors-about us/sahra Gynecologist.html" class="doct-link"> View More </a>
+          </div>
+
+          <!-- Doctor 6 -->
+          <div class="card-doctor">
+            <div class="card-top">
+              <img
+                class="doct-image"
+                src="https://i.pinimg.com/736x/b0/2d/ff/b02dfff325b03c271ecc45e5d12bd8a0.jpg"
+                alt="Dr. Hodan Mohamed Noor"
+              />
+
+              <div class="doctor-info">
+                <div class="doct-name">Drs. Hodan Mohamed Noor</div>
+
+                <div class="doct-dept">Dermatology</div>
+              </div>
+            </div>
+
+            <a href="/project-two/doctors-about us/hodan.html" class="doct-link"> View More </a>
+          </div>
+
+          <!-- Doctor 7 -->
+          <div class="card-doctor">
+            <div class="card-top">
+              <img
+                class="doct-image"
+                src="https://i.pinimg.com/1200x/60/44/dc/6044dc1f695f16851ac3241295f97bb0.jpg"
+                alt="Dr. Ayaan Hassan Ali"
+              />
+
+              <div class="doctor-info">
+                <div class="doct-name">Drs. Ayaan Hassan Ali</div>
+
+                <div class="doct-dept">Pediatrics</div>
+              </div>
+            </div>
+
+            <a href="ayan Pediatrician.html" class="doct-link"> View More </a>
+          </div>
+
+          <!-- Doctor 8 -->
+          <div class="card-doctor">
+            <div class="card-top">
+              <img
+                class="doct-image"
+                src="https://i.pinimg.com/736x/07/17/8c/07178ce99848a10d14a90127ec068435.jpg"
+                alt="Dr. Abdirahman Omar Yusuf"
+              />
+
+              <div class="doctor-info">
+                <div class="doct-name">Dr. Abdirahman Omar Yusuf</div>
+
+                <div class="doct-dept">Cardiology</div>
+              </div>
+            </div>
+
+            <a href="/project-two/doctors-about us/abdirahman Cardiologist.html" class="doct-link">
+              View More
+            </a>
+          </div>
+
+          <!-- Doctor 9 -->
+          <div class="card-doctor">
+            <div class="card-top">
+              <img
+                class="doct-image"
+                src="https://i.pinimg.com/736x/c9/9e/4d/c99e4dbd3b3dcc7d0a90e22edb54fca6.jpg"
+                alt="Dr. Mohamed Ahmed Abdi"
+              />
+
+              <div class="doctor-info">
+                <div class="doct-name">Dr. Mohamed Ahmed Abdi</div>
+
+                <div class="doct-dept">Neurology</div>
+              </div>
+            </div>
+
+            <a href="/project-two/doctors-about us/mohamedneorology.html" class="doct-link"> View More </a>
+          </div>
+
+          <!-- Doctor 10 -->
+          <div class="card-doctor">
+            <div class="card-top">
+              <img
+                class="doct-image"
+                src="https://i.pinimg.com/1200x/32/1e/13/321e13b9abf47c5249086557894a2d4d.jpg"
+                alt="Dr. Emily Sophia Anderson"
+              />
+
+              <div class="doctor-info">
+                <div class="doct-name">Drs. Emily Sophia Anderson</div>
+
+                <div class="doct-dept">Psychiatry</div>
+              </div>
+            </div>
+
+            <a href="/project-two/doctors-about us/emily.html" class="doct-link"> View More </a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-    <div class="footer-container">
 
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
         <!-- Logo & About Hospital -->
         <div class="footer-section hospital-about">
-            <img src="logo.jpeg" alt="Somcare Hospital Logo" class="footer-logo">
-            <p>
-                Providing quality healthcare services with experienced
-                doctors and modern medical facilities.
-            </p>
-        </div>
+          <img
+            src="logo.jpeg"
+            alt="SomCare Hospital Logo"
+            class="footer-logo"
+          />
 
-      
+          <p>
+            Providing quality healthcare services with experienced doctors and
+            modern medical facilities.
+          </p>
+        </div>
 
         <!-- Our Services -->
         <div class="footer-section">
-            <h3>Our Services</h3>
-            <ul>
-                <li>Emergency Care</li>
-                <li>Laboratory</li>
-                <li>Pharmacy</li>
-                <li>Surgery</li>
-            </ul>
+          <h3>Our Services</h3>
+
+          <ul>
+            <li>Emergency Care</li>
+            <li>Laboratory</li>
+            <li>Pharmacy</li>
+            <li>Surgery</li>
+          </ul>
         </div>
 
-          <!-- Quick Links -->
+        <!-- Quick Links -->
         <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Doctors</a></li>
-                <li><a href="#">Medical Units</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="index.html#about">About Us</a>
+            </li>
+
+            <li>
+              <a href="doctors.html">Doctors</a>
+            </li>
+
+            <li>
+              <a href="index.html#units">Medical Units</a>
+            </li>
+
+            <li>
+              <a href="index.html#contacts">Contact</a>
+            </li>
+          </ul>
         </div>
 
         <!-- Contact Us -->
         <div class="footer-section contact-info">
-            <h3>Contact Us</h3>
-            <p>📍 Location: Mogadishu, Somalia</p>
-            <p class="emergency">📞 Emergency: 24/7</p>
-            <p>📧 Email: info@somcarehospital.com</p>
-            <p>🕐 Open 24/7</p>
+          <h3>Contact Us</h3>
+
+          <p>📍 Location: Mogadishu, Somalia</p>
+
+          <p class="emergency">📞 Emergency: 24/7</p>
+
+          <p>📧 Email: info@somcarehospital.com</p>
+
+          <p>🕐 Open 24/7</p>
         </div>
 
         <!-- Social Media -->
         <div class="footer-section">
-            <h3>Follow Us</h3>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook-f"></i> Somcare Hospital</a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i> Somcare Hospital</a></li>
-                <li><a href="#"><i class="fab fa-whatsapp"></i> 0618097854</a></li>
-                <li><a href="#"><i class="fab fa-tiktok"></i> Somcare Hospital</a></li>
-            </ul>
+          <h3>Follow Us</h3>
+
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+                SomCare Hospital
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+                SomCare Hospital
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-whatsapp"></i>
+                0618097854
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-tiktok"></i>
+                SomCare Hospital
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-    </div>
-
-    <!-- Bottom Footer -->
-    <div class="footer-bottom">
-        <p>© 2026 Somcare Hospital 🏥. All Rights Reserved.</p>
-    </div>
-</footer>
-
-</body>
-
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <p>© 2026 SomCare Hospital 🏥. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
