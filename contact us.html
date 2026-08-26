@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SomCare Hospital</title>
+
+    <link rel="stylesheet" href="contacts.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <div class="Logo">
+        <img src="download.png" alt="SomCare Hospital Logo" />
+        <span>SomCare Hospital</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="./doctors.html">Doctors</a></li>
+          <li><a href="#units">Medical units</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+    <main>
+        <!-- ================= CONTACT HERO ================= -->
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <span class="hero-small-title">
+                    <i class="fas fa-hospital"></i> SomCare Hospital
+                </span>
+                <h1> Contact Us</h1>
+                <p>
+                    We are here to help you. Contact SomCare Hospital
+                    anytime for medical information, emergency services
+                    and general inquiries.
+                </p>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT INFORMATION ================= -->
+        <section class="contact-information-section">
+            <div class="section-heading">
+                <span> GET IN TOUCH</span>
+                <h2>We Are Here For You</h2>
+                <p> Choose the communication method that is most convenient
+                    for you and contact SomCare Hospital.
+                </p>
+            </div>
+            <div class="contact-methods">
+                <!-- PHONE -->
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-method-content">
+                        <h3> Phone </h3>
+                        <p>
+                            Speak directly with our hospital team.
+                        </p>
+                        <a href="tel:+252613047788" class="a"> +252 61 3047788</a>
+                    </div>
+                </div>
+
+                <!-- WHATSAPP -->
+                <div class="contact-method">
+                    <div class="contact-method-icon whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-method-content">
+                        <h3> WhatsApp</h3>
+                        <p> Send us a message through WhatsApp.</p>
+                        <a href="https://wa.me/252613047788" target="_blank" class="a"> Chat on WhatsApp</a>
+                    </div>
+                </div>
+                <!-- EMAIL -->
+                <div class="contact-method">
+                    <div class="contact-method-icon email-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-method-content">
+                        <h3>Email</h3>
+                        <p> Send us your questions and inquiries.</p>
+                        <a href="mailto:info@somcarehospital.com" class="a"> 
+                            info@somcarehospital.com
+                        </a>
+                    </div>
+                </div>
+                <!-- CALL CENTER -->
+                <div class="contact-method">
+                    <div class="contact-method-icon call-center-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="contact-method-content">
+                        <h3>Call Center</h3>
+                        <p> Our support team is available 24/7.</p>
+                        <a href="tel:+2526137788" class="a">7788</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MESSAGE FORM ================= -->
+        <section class="contact-form-section">
+            <div class="contact-form-container">
+                <div class="form-heading">
+                    <span><i class="fas fa-comment-medical"></i>SEND MESSAGE</span>
+                    <h2> Contact Our Hospital </h2>
+                    <p>
+                        Have a question or need more information?
+                        Send us a message and our team will respond.
+                    </p>
+                </div>
+                <form class="message-form">
+                    <!-- NAME + EMAIL -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" name="contact-name" placeholder="Enter your name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+
+                            <input type="email" id="contact-email" name="contact-email" placeholder="Enter your email"
+                                required>
+                        </div>
+                    </div>
+                    <!-- PHONE + SUBJECT -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-phone">phone Number</label>
+                            <input type="tel" id="contact-phone" name="contact-phone"
+                                placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="contact-subject"
+                                placeholder="Enter message subject" required>
+                        </div>
+                    </div>
+                    <!-- MESSAGE -->
+                    <div class="form-group">
+                        <label for="contact-message"> Your Message</label>
+                        <textarea id="contact-message" name="contact-message" rows="7"
+                            placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <!-- BUTTON -->
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ================= EMERGENCY ================= -->
+        <section class="emergency-contact-section">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-triangle-exclamation"></i>
+                </div>
+                <div class="emergency-text">
+                    <span>EMERGENCY SERVICES</span>
+                    <h2>Need Emergency Medical Help> </h2>
+                    <p>
+                        Our emergency department is available 24 hours a day,
+                        7 days a week.
+                    </p>
+                </div>
+                <a href="tel:+252613047788" class="emergency-button" >
+                    <i class="fas fa-phone"></i>
+                    Call Emergency
+                </a>
+            </div>
+        </section>
+        <!-- ================= LOCATION ================= -->
+        <section class="hospital-location-section">
+            <div class="location-content">
+                <div class="location-information">
+                    <span>
+                        <i class="fas fa-location-dot"></i>
+                        OUR LOCATION
+                    </span>
+                    <h2>Visit SomCare Hospital</h2>
+                    <p>
+                        Our hospital team is ready to provide you with
+                        professional healthcare services and support.
+                    </p>
+                    <div class="location-details">
+                        <p>
+                            <i class="fas fa-location-dot"></i>
+                            Mogadishu, Somalia
+                        </p>
+                        <p> <i class="fas fa-clock"></i>
+                            Open 24 Hours / 7 Days
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            +252 61 3047788
+                        </p>
+                    </div>
+                </div>
+
+                <!-- LOCATION CARD -->
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-location-dot"></i>
+                        <h3>SomCare Hospital </h3>
+                        <p>Mogadishu, Somalia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo & About Hospital -->
+        <div class="footer-section hospital-about">
+          <img
+            src="logo.jpeg" alt="SomCare Hospital Logo" class="footer-logo"/>
+
+          <p>
+            Providing quality healthcare services with experienced doctors and
+            modern medical facilities.
+          </p>
+        </div>
+
+        <!-- Our Services -->
+        <div class="footer-section">
+          <h3>Our Services</h3>
+          <ul>
+            <li>Emergency Care</li>
+            <li>Laboratory</li>
+            <li>Pharmacy</li>
+            <li>Surgery</li>
+          </ul>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="#"> About Us </a></li>
+            <li><a href="#"> Doctors </a></li>
+            <li><a href="#"> Medical Units </a></li>
+            <li><a href="#"> Contact </a></li>
+          </ul>
+        </div>
+        <!-- Contact Us -->
+        <div class="footer-section contact-info">
+          <h3>Contact Us</h3>
+          <p>📍 Location: Mogadishu, Somalia</p>
+          <p class="emergency">📞 Emergency: 24/7</p>
+          <p>📧 Email: info@somcarehospital.com</p>
+          <p>🕐 Open 24/7</p>
+        </div>
+        <!-- Social Media -->
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i>SomCare Hospital</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i>SomCare Hospital</a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i>0618097854</a></li>
+            <li><a href="#"><i class="fab fa-tiktok"></i>SomCare Hospital</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <p>© 2026 SomCare Hospital 🏥. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+</body>
+
+</html>
