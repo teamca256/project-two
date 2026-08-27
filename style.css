@@ -1659,6 +1659,333 @@ text-align: left;
   }
 }
 
+   /* =========================
+           ABOUT SECTION
+        ========================= */
+
+      .about-section {
+        background-color: var(--text-color-1);
+
+        width: 90%;
+        max-width: 1250px;
+
+        padding: 45px;
+
+        margin: 7rem auto;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+        border-radius: 15px;
+      }
+
+      /* TITLE */
+
+      .about-name {
+        font-size: 3.5rem;
+
+        color: white;
+
+        text-align: center;
+
+        margin-bottom: 40px;
+
+        font-family: var(--heading-font);
+
+        text-transform: capitalize;
+      }
+
+      .about-name::first-letter {
+        color: var(--secondary-color);
+      }
+
+      /* =========================
+           CONTAINER
+        ========================= */
+
+      .about-container {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+
+      /* =========================
+           IMAGES
+        ========================= */
+
+      .about-item {
+        width: 100%;
+      }
+
+      .image1 {
+        width: 100%;
+
+        height: 430px;
+
+        object-fit: cover;
+
+        border-radius: 10px;
+
+        display: block;
+      }
+
+      /* =========================
+           ABOUT TEXT
+        ========================= */
+
+      .about-text {
+        padding: 20px;
+      }
+
+      .about-text h3 {
+        color: var(--secondary-color);
+
+        font-size: 1rem;
+
+        text-transform: uppercase;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 15px;
+      }
+      .about-text h2 {
+        margin-bottom: 15px;
+        color: rgb(131, 126, 126);
+      }
+      .about-text h2 span {
+        color: var(--secondary-color);
+        margin-bottom: 1500px;
+      }
+
+      .about-text p {
+        color: #d5d9e2;
+
+        font-size: 15px;
+        letter-spacing: 1.3px;
+
+        line-height: 1.5;
+
+        margin-bottom: 18px;
+      }
+
+      /* =========================
+           FEATURES
+        ========================= */
+
+      .about-features {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        margin-top: 20px;
+      }
+
+      .feature {
+        display: flex;
+
+        align-items: center;
+
+        gap: 10px;
+
+        color: white;
+
+        font-size: 14px;
+
+        font-weight: 600;
+      }
+
+      .feature i {
+        color: var(--secondary-color);
+      }
+
+      /* =========================
+           RESPONSIVE
+        ========================= */
+
+      @media (max-width: 1000px) {
+        .about-container {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .about-text {
+          grid-column: 1 / -1;
+
+          text-align: center;
+        }
+
+        .about-features {
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 650px) {
+        .about-section {
+          width: 94%;
+
+          padding: 25px;
+
+          margin: 3rem auto;
+        }
+
+        .about-name {
+          font-size: 2.5rem;
+        }
+
+        .about-container {
+          grid-template-columns: 1fr;
+        }
+
+        .image1 {
+          height: 350px;
+        }
+
+        .image2 {
+          height: 300px;
+        }
+
+        .about-text {
+          grid-column: auto;
+
+          text-align: left;
+
+          padding: 10px 0;
+        }
+
+        .about-text h2 {
+          font-size: 1.8rem;
+        }
+      }
+      .vis-miss-valu-flex {
+        width: 100%;
+        max-width: 1200px;
+        margin: 5rem auto;
+      }
+       .vis-miss-valu-flex h2{
+        text-align: center;
+        color: var(--text-color-1);
+        margin: 3rem;
+        font-size: 3rem;
+        font-family: var(--heading-font);
+        letter-spacing: 1px;
+       }
+      .vis-miss-valu-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+      }
+      .vis-miss-valu-item {
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        border-radius: 10px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-family: var(--paragraph-font);
+          color: #2c2d2e;
+          transition:ransform 1s,ease-in ;
+      }
+      .vis-miss-valu-item h2{
+        margin: 1.2rem;
+        font-size: 1.7rem;
+        font-family: var(--heading-font);
+        color: var(--button-hover-color);
+      }
+       .vis-miss-valu-item:hover{
+                transform: scale(1.05);
+       }
+       /* manegers */
+     .manegers { 
+    background-color: rgba(253, 253, 253, 0.9); 
+    padding: 20px; 
+}
+
+.name-maneger { 
+    text-align: center; 
+    font-size: 3rem; 
+    font-weight: bold; 
+    margin: 50px 0 40px; 
+    padding: 10px; 
+    font-family: var(--heading-font); 
+    color: var(--text-color-1); 
+}
+
+.manegers-container { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px; 
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden; 
+}
+
+.maneger-item { 
+    padding: 25px 15px; 
+    font-family: var(--heading-font); 
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15); 
+    background-color: white; 
+    font-size: 1.2rem; 
+    text-align: center; 
+    font-weight: bold; 
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.maneger-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);
+}
+
+.maneger-item img { 
+    width: 140px; 
+    height: 140px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid var(--main-color);
+}
+/* media */
+/* Tablet */
+@media (max-width: 900px) {
+    .manegers-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .name-maneger {
+        font-size: 2.5rem;
+        margin: 40px 0 30px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    .manegers {
+        padding: 15px;
+    }
+
+    .manegers-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .name-maneger {
+        font-size: 2rem;
+        margin: 30px 0 25px;
+    }
+
+    .maneger-item {
+        padding: 20px 10px;
+    }
+
+    .maneger-item img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
  /* DEPARTMENT  SERVICES SECTION */
 
 .overview-section {
