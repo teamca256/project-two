@@ -1659,11 +1659,10 @@ tbody tr:hover {
   }
 }
 
-<<<<<<< HEAD
-   /* =========================
+    /* =========================
            ABOUT SECTION
         ========================= */
-        
+
       .about-section {
         background-color: var(--text-color-1);
 
@@ -1987,10 +1986,8 @@ tbody tr:hover {
     }
 }
 
- /* DEPARTMENT  SERVICES SECTION */
-=======
+
 /* DEPARTMENT  SERVICES SECTION */
->>>>>>> bda1d483f287386f27af5ec7db5d25c902a67262
 
 .overview-section {
   padding: 50px 20px;
