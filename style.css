@@ -1413,13 +1413,13 @@ tbody tr:hover {
   font-family: var(--paragraph-font);
   font-size: 1rem;
   font-weight: 400;
-text-align: left;
+  text-align: left;
   line-height: 1.9;
   letter-spacing: 0.5px;
   margin-left: 10px;
 }
 .dcto-detaules {
- font-family: var(--paragraph-font);
+  font-family: var(--paragraph-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
@@ -1659,7 +1659,7 @@ text-align: left;
   }
 }
 
- /* DEPARTMENT  SERVICES SECTION */
+/* DEPARTMENT  SERVICES SECTION */
 
 .overview-section {
   padding: 50px 20px;
@@ -1716,8 +1716,7 @@ text-align: left;
   font-size: 1.05rem;
 }
 
-
-   /* SERVICES GRID SECTION */
+/* SERVICES GRID SECTION */
 .learn-section {
   max-width: 1100px;
   margin: 40px auto 70px auto;
@@ -1738,7 +1737,6 @@ text-align: left;
   gap: 20px;
 }
 
-
 .service-btn-card {
   background-color: var(--cards-background-color);
   color: var(--text-color-1);
@@ -1756,14 +1754,12 @@ text-align: left;
   box-shadow: 0 2px 8px rgba(31, 41, 69, 0.05);
 }
 
-
 .service-btn-card:hover {
   background-color: var(--button-hover-color);
   color: #ffffff;
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(20, 98, 215, 0.25);
 }
-
 
 .btn-primary {
   background-color: var(--button-background-color);
@@ -1775,14 +1771,12 @@ text-align: left;
   background-color: var(--button-hover-color);
 }
 
-
 .emergency-tag {
   color: var(--emergency-color);
   font-weight: bold;
 }
 
-
-   /* RESPONSIVE DESIGN (MOBAYLKA) */
+/* RESPONSIVE DESIGN (MOBAYLKA) */
 
 @media (max-width: 768px) {
   .overview-container {
@@ -1806,155 +1800,292 @@ text-align: left;
 
 
 
-
-
-
-
-
-
 /* CONTENT */
-.contact-method-content h3 {
-    margin-bottom: 7px;
+/*  CONTACT HERO */
+.contact-hero {
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:
+        linear-gradient(
+            rgba(15, 23, 42, 0.68),
+            rgba(20, 98, 215, 0.72)
+        ),
+        url("hospital.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-hero-content {
+    width: min(900px, 90%);
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-small-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    color: var(--background-color);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-hero-content h1 {
+    margin-bottom: 18px;
     font-family: var(--heading-font);
-    font-size: 19px;
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 700;
+}
+
+.contact-hero-content p {
+    max-width: 700px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--paragraph-font);
+
+    font-size: 17px;
+}
+
+/*  SECTION HEADING*/
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.section-heading > span {
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    margin: 8px 0 12px;
+    font-family: var(--heading-font);
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.section-heading p {
+    color: var(--text-color-2);
+    font-size: 16px;
+}
+/* CONTACT INFORMATION */
+.contact-information-section {
+    width: min(1200px, 90%);
+    margin: auto;
+    padding: 90px 0;
+}
+.a {
+    text-decoration: none;
+}
+.contact-methods {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 20px;
+}
+
+.contact-method {
+    min-height: 210px;
+    padding: 28px 22px;
+    background-color: var(--cards-background-color);
+    border:
+        1px solid rgba(20, 98, 215, 0.08);
+    border-radius: 16px;
+    box-shadow:
+        0 10px 30px
+        rgba(31, 41, 69, 0.07);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.contact-method:hover {
+    transform: translateY(-7px);
+    box-shadow:
+        0 18px 40px
+        rgba(31, 41, 69, 0.12);
+}
+
+/* ICON */
+
+.contact-method-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background-color:
+        rgba(20, 98, 215, 0.1);
+    color: var(--main-color);
+    font-size: 21px;
+}
+
+.whatsapp-icon {
+
+    background-color:
+        rgba(34, 197, 94, 0.12);
+
+    color: var(--secondary-color);
+}
+.email-icon {
+    background-color:
+        rgba(20, 98, 215, 0.1);
+
+    color: var(--main-color);
+}
+.call-center-icon {
+    background-color:
+        rgba(220, 38, 38, 0.1);
+
+    color: var(--emergency-color);
+}
+.contact-method-content h3 {
+  margin-bottom: 7px;
+  font-family: var(--heading-font);
+  font-size: 19px;
 }
 .contact-method-content p {
-    margin-bottom: 12px;
-    color: var(--text-color-2);
-    font-size: 14px;
+  margin-bottom: 12px;
+  color: var(--text-color-2);
+  font-size: 14px;
 }
 .contact-method-content a {
-    color: var(--main-color);
-    font-size: 14px;
-    font-weight: 700;
-    word-break: break-word;
-    transition:
-        color 0.3s ease;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 700;
+  word-break: break-word;
+  transition: color 0.3s ease;
 }
 
 .contact-method-content a:hover {
-    color: var(--button-hover-color);
+  color: var(--button-hover-color);
 }
 
 /*  CONTACT MESSAGE FORM */
 
 .contact-form-section {
-    padding: 90px 0;
-    background-color: #ffffff;
+  padding: 90px 0;
+  background-color: #ffffff;
 }
 .contact-form-container {
-    width: min(850px, 90%);
-    margin: auto;
-    padding: 45px;
-    background-color:var(--cards-background-color);
-    border: 1px solid rgba(20, 98, 215, 0.08);
-    border-radius: 18px;
-    box-shadow:
-        0 12px 35px
-        rgba(31, 41, 69, 0.08);
+  width: min(850px, 90%);
+  margin: auto;
+  padding: 45px;
+  background-color: var(--cards-background-color);
+  border: 1px solid rgba(20, 98, 215, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(31, 41, 69, 0.08);
 }
 /* FORM HEADING */
 .form-heading {
-    max-width: 650px;
-    margin: 0 auto 35px;
-    text-align: center;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  text-align: center;
 }
 
 .form-heading > span {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--main-color);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--main-color);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
 }
 .form-heading h2 {
-    margin: 8px 0 10px;
-    font-family: var(--heading-font);
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--text-color-1);
+  margin: 8px 0 10px;
+  font-family: var(--heading-font);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-color-1);
 }
 .form-heading p {
-    color: var(--text-color-2);
-    font-size: 15px;
+  color: var(--text-color-2);
+  font-size: 15px;
 }
 /* FORM ROW */
 .form-row {
-    display: grid;
-    grid-template-columns:
-        repeat(2, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 /* FORM GROUP */
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .form-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: var(--text-color-1);
-    font-size: 14px;
-    font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-color-1);
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* INPUT */
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 13px 15px;
-    color: var(--text-color-1);
-    background-color: var(--background-color);
-    border:1px solid #dce3ed;
-    border-radius: 9px;
-    outline: none;
-    transition:
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+  width: 100%;
+  padding: 13px 15px;
+  color: var(--text-color-1);
+  background-color: var(--background-color);
+  border: 1px solid #dce3ed;
+  border-radius: 9px;
+  outline: none;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .form-group input {
-    height: 50px;
+  height: 50px;
 }
 .form-group textarea {
-    min-height: 150px;
-    resize: vertical;
+  min-height: 150px;
+  resize: vertical;
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #9aa3b2;
+  color: #9aa3b2;
 }
 
 /* INPUT FOCUS */
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color:var(--main-color);
-    box-shadow:0 0 0 3px
-        rgba(20, 98, 215, 0.1);
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 3px rgba(20, 98, 215, 0.1);
 }
 
 /* SUBMIT BUTTON */
 .submit-button {
-    width: 100%;
-    min-height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    border: none;
-    border-radius: 9px;
-    background-color: var(--button-background-color);
-    color: var(--background-color);
-    font-weight: 700;
-    cursor: pointer;
-    transition:
-        background-color 0.3s ease,
-        transform 0.2s ease;
+  width: 100%;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: none;
+  border-radius: 9px;
+  background-color: var(--button-background-color);
+  color: var(--background-color);
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 .submit-button:hover {
-    background-color:var(--button-hover-color);
-    transform:translateY(-2px);
+  background-color: var(--button-hover-color);
+  transform: translateY(-2px);
 }
 
 /* ==================================================
@@ -1962,274 +2093,220 @@ text-align: left;
 ================================================== */
 
 .emergency-contact-section {
-
-    width: min(1200px, 90%);
-    margin: 80px auto;
-    padding: 35px 40px;
-    background-color:
-        var(--emergency-color);
-    border-radius: 18px;
-    color: #ffffff;
+  width: min(1200px, 90%);
+  margin: 80px auto;
+  padding: 35px 40px;
+  background-color: var(--emergency-color);
+  border-radius: 18px;
+  color: #ffffff;
 }
-
 
 .emergency-content {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
-
 
 .emergency-icon {
+  width: 65px;
+  height: 65px;
 
-    width: 65px;
-    height: 65px;
+  flex-shrink: 0;
 
-    flex-shrink: 0;
+  display: flex;
 
-    display: flex;
+  align-items: center;
+  justify-content: center;
 
-    align-items: center;
-    justify-content: center;
+  background-color: rgba(255, 255, 255, 0.15);
 
-    background-color:
-        rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
 
-    border-radius: 50%;
-
-    font-size: 25px;
+  font-size: 25px;
 }
-
 
 .emergency-text {
-
-    flex: 1;
+  flex: 1;
 }
-
 
 .emergency-text > span {
+  font-size: 12px;
 
-    font-size: 12px;
+  font-weight: 700;
 
-    font-weight: 700;
-
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
-
 
 .emergency-text h2 {
+  margin: 4px 0;
 
-    margin: 4px 0;
+  font-family: var(--heading-font);
 
-    font-family: var(--heading-font);
-
-    font-size: 24px;
+  font-size: 24px;
 }
-
 
 .emergency-text p {
+  color: rgba(255, 255, 255, 0.88);
 
-    color:
-        rgba(255, 255, 255, 0.88);
-
-    font-size: 14px;
+  font-size: 14px;
 }
-
 
 .emergency-button {
+  min-width: 175px;
 
-    min-width: 175px;
+  padding: 13px 20px;
+  text-decoration: none;
 
-    padding: 13px 20px;
-    text-decoration: none;
+  display: flex;
 
-    display: flex;
+  align-items: center;
+  justify-content: center;
 
-    align-items: center;
-    justify-content: center;
+  gap: 8px;
 
-    gap: 8px;
+  background-color: #ffffff;
 
-    background-color: #ffffff;
+  color: var(--emergency-color);
 
-    color: var(--emergency-color);
+  border-radius: 8px;
 
-    border-radius: 8px;
+  font-weight: 700;
 
-    font-weight: 700;
-
-    transition:
-        transform 0.3s ease,
-        background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
-
 
 .emergency-button:hover {
+  background-color: #f8fafc;
 
-    background-color: #f8fafc;
-
-    transform:
-        translateY(-2px);
+  transform: translateY(-2px);
 }
-
 
 /* ==================================================
    LOCATION
 ================================================== */
 
 .hospital-location-section {
+  padding: 90px 0;
 
-    padding: 90px 0;
-
-    background-color:
-        var(--background-color);
+  background-color: var(--background-color);
 }
-
 
 .location-content {
+  width: min(1200px, 90%);
 
-    width: min(1200px, 90%);
+  margin: auto;
 
-    margin: auto;
+  display: grid;
 
-    display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    grid-template-columns:
-        1fr 1fr;
+  gap: 50px;
 
-    gap: 50px;
-
-    align-items: center;
+  align-items: center;
 }
-
 
 .location-information > span {
+  color: var(--main-color);
 
-    color: var(--main-color);
+  font-size: 13px;
 
-    font-size: 13px;
+  font-weight: 700;
 
-    font-weight: 700;
-
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
-
 
 .location-information h2 {
+  margin: 10px 0 15px;
 
-    margin: 10px 0 15px;
+  font-family: var(--heading-font);
 
-    font-family: var(--heading-font);
-
-    font-size: 34px;
+  font-size: 34px;
 }
-
 
 .location-information > p {
+  max-width: 550px;
 
-    max-width: 550px;
-
-    color: var(--text-color-2);
+  color: var(--text-color-2);
 }
-
 
 .location-details {
-
-    margin-top: 25px;
+  margin-top: 25px;
 }
-
 
 .location-details p {
+  margin-bottom: 12px;
 
-    margin-bottom: 12px;
+  display: flex;
 
-    display: flex;
+  align-items: center;
 
-    align-items: center;
+  gap: 12px;
 
-    gap: 12px;
+  color: var(--text-color-1);
 
-    color: var(--text-color-1);
-
-    font-weight: 500;
+  font-weight: 500;
 }
-
 
 .location-details i {
+  width: 22px;
 
-    width: 22px;
+  color: var(--main-color);
 
-    color: var(--main-color);
-
-    text-align: center;
+  text-align: center;
 }
-
 
 /* LOCATION CARD */
 
 .location-map {
+  min-height: 330px;
 
-    min-height: 330px;
+  padding: 20px;
 
-    padding: 20px;
+  background: linear-gradient(rgba(20, 98, 215, 0.08), rgba(20, 98, 215, 0.15));
 
-    background:
-        linear-gradient(
-            rgba(20, 98, 215, 0.08),
-            rgba(20, 98, 215, 0.15)
-        );
+  border-radius: 18px;
 
-    border-radius: 18px;
+  display: flex;
 
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .map-placeholder {
+  width: 100%;
+  height: 280px;
 
-    width: 100%;
-    height: 280px;
+  border-radius: 14px;
 
-    border-radius: 14px;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-    background-color: var(--background-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    box-shadow:
-        0 10px 30px
-        rgba(31, 41, 69, 0.08);
+  box-shadow: 0 10px 30px rgba(31, 41, 69, 0.08);
 }
-
 
 .map-placeholder > i {
+  margin-bottom: 12px;
 
-    margin-bottom: 12px;
+  color: var(--main-color);
 
-    color: var(--main-color);
-
-    font-size: 40px;
+  font-size: 40px;
 }
-
 
 .map-placeholder h3 {
+  font-family: var(--heading-font);
 
-    font-family: var(--heading-font);
-
-    font-size: 20px;
+  font-size: 20px;
 }
 
-
 .map-placeholder p {
+  color: var(--text-color-2);
 
-    color: var(--text-color-2);
-
-    font-size: 14px;
+  font-size: 14px;
 }
 
 /* ==================================================
@@ -2237,161 +2314,111 @@ text-align: left;
 ================================================== */
 
 @media (max-width: 1100px) {
+  .location-content {
+    grid-template-columns: 1fr;
+  }
 
-    .location-content {
+  .emergency-content {
+    align-items: flex-start;
 
-        grid-template-columns: 1fr;
-    }
-
-
-    .emergency-content {
-
-        align-items: flex-start;
-
-        flex-wrap: wrap;
-    }
-
+    flex-wrap: wrap;
+  }
 }
-
 
 @media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
 
-    .site-header {
+    gap: 18px;
+  }
 
-        flex-direction: column;
+  .navigation-list {
+    gap: 16px;
 
-        gap: 18px;
-    }
+    flex-wrap: wrap;
 
+    justify-content: center;
+  }
 
-    .navigation-list {
+  .navigation-list a {
+    font-size: 14px;
+  }
 
-        gap: 16px;
+  .contact-hero {
+    min-height: 380px;
+  }
 
-        flex-wrap: wrap;
+  .contact-information-section,
+  .hospital-location-section {
+    padding: 65px 0;
+  }
 
-        justify-content: center;
-    }
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
 
+  .form-row {
+    grid-template-columns: 1fr;
 
-    .navigation-list a {
+    gap: 0;
+  }
 
-        font-size: 14px;
-    }
+  .contact-form-container {
+    padding: 30px 22px;
+  }
 
+  .emergency-contact-section {
+    padding: 30px 25px;
+  }
 
-    .contact-hero {
+  .emergency-content {
+    flex-direction: column;
+  }
 
-        min-height: 380px;
-    }
+  .emergency-button {
+    width: 100%;
+  }
 
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
 
-    .contact-information-section,
-    .hospital-location-section {
-
-        padding: 65px 0;
-    }
-
-
-    .contact-methods {
-
-        grid-template-columns: 1fr;
-    }
-
-
-    .form-row {
-
-        grid-template-columns: 1fr;
-
-        gap: 0;
-    }
-
-
-    .contact-form-container {
-
-        padding: 30px 22px;
-    }
-
-
-    .emergency-contact-section {
-
-        padding: 30px 25px;
-    }
-
-
-    .emergency-content {
-
-        flex-direction: column;
-    }
-
-
-    .emergency-button {
-
-        width: 100%;
-    }
-
-
-    .footer-container {
-
-        grid-template-columns:
-            repeat(2, 1fr);
-
-        padding: 50px 0 35px;
-    }
-
+    padding: 50px 0 35px;
+  }
 }
 
-
 @media (max-width: 520px) {
+  .hospital-logo {
+    font-size: 18px;
+  }
 
-    .hospital-logo {
+  .hospital-logo img {
+    width: 55px;
 
-        font-size: 18px;
-    }
+    height: 52px;
+  }
 
+  .navigation-list {
+    gap: 12px;
+  }
 
-    .hospital-logo img {
+  .contact-hero-content h1 {
+    font-size: 40px;
+  }
 
-        width: 55px;
+  .contact-hero-content p {
+    font-size: 15px;
+  }
 
-        height: 52px;
-    }
+  .section-heading h2,
+  .location-information h2 {
+    font-size: 27px;
+  }
 
+  .form-heading h2 {
+    font-size: 26px;
+  }
 
-    .navigation-list {
-
-        gap: 12px;
-    }
-
-
-    .contact-hero-content h1 {
-
-        font-size: 40px;
-    }
-
-
-    .contact-hero-content p {
-
-        font-size: 15px;
-    }
-
-
-    .section-heading h2,
-    .location-information h2 {
-
-        font-size: 27px;
-    }
-
-
-    .form-heading h2 {
-
-        font-size: 26px;
-    }
-
-
-    .footer-container {
-
-        grid-template-columns: 1fr;
-    }
-
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
 }
