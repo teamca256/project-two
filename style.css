@@ -312,9 +312,9 @@ header nav li a:hover {
 }
 
 .features-grid-our-service {
-  display: flex;
+  display: grid;
 
-  justify-content: center;
+  grid-template-columns: repeat(3,2fr);
   gap: 20px;
   max-width: 1100px;
   width: 100%;
@@ -480,7 +480,7 @@ header nav li a:hover {
 }
 
 /* Container & Header */
-.medical-units-container {
+.deparments-container {
   padding: 40px 20px;
   background-color: var(--background-color);
   max-width: 1000px;
@@ -488,7 +488,7 @@ header nav li a:hover {
   text-align: center;
 }
 
-.units-header h2 {
+.deparments-header h2 {
   font-family: var(--heading-font);
   font-size: 2.5rem;
   color: var(--text-color-1);
@@ -505,7 +505,7 @@ header nav li a:hover {
 }
 
 /* Grid Layout */
-.units-grid {
+.deparments-grid {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -513,7 +513,7 @@ header nav li a:hover {
   margin: 0 auto 30px auto;
 }
 
-.unit-card {
+.deparments-card {
   flex: 1;
   background-color: var(--cards-background-color);
   border: 1px solid rgba(14, 165, 164, 0.15);
@@ -524,34 +524,34 @@ header nav li a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
-.unit-card:hover {
+.deparments:hover {
   transform: translateY(-5px);
   border-color: var(--button-hover-color);
   box-shadow: 0 12px 20px -5px rgba(15, 118, 110, 0.18);
 }
 
-.unit-title-box {
+.deparments-title-box {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 12px;
 }
 
-.unit-title-box h3 {
+.deparments-title-box h3 {
   font-family: var(--subheading-font);
   color: var(--text-color-1);
   font-size: 16px;
   margin: 0;
 }
 
-.unit-img {
+.deparments-img {
   width: 100%;
   height: 140px;
   object-fit: cover;
   border-radius: 9px;
 }
 
-.view-all-units-btn {
+.view-all-deparments-btn {
   display: block;
   width: fit-content;
   margin: 0 auto;
@@ -566,7 +566,7 @@ header nav li a:hover {
   transition: background-color 0.3s ease;
 }
 
-.view-all-units-btn:hover {
+.view-all-deparments-btn:hover {
   background-color: var(--text-color-1);
   color: var(--cards-background-color);
 }
